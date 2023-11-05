@@ -1,0 +1,31 @@
+\documentclass[a4paper, 12pt]{amsart}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\author{Imie Nazwisko}
+\title{Wprowadzanie w tryb matematyczny}
+\begin{document}
+\maketitle
+
+\section{SYMBOLY MATEMATYCZNY}
+\subsection{Sumy, iloczyny i całki. $ \sum_{k=1}^{n} , \prod_{k=1}^{n} , \int_{0}^{\frac{\pi}{2}} $} 
+\paragraph{ Dla każdego $ n \in \mathbb{N}$ spełniona jest równość}
+$$ \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} .$$
+\paragraph{Także $\forall n \in \mathbb{N},$ spełnia się}
+$$ \prod_{k=2}^{n+1} \left(1-\frac{1}{k^2}\right)=\frac{2n+1}{2n}. $$
+Wewnątrz akapitu suma może być napisana jako\(\sum_{k=1}^{n}a^n\) albo jako \({\sum\limits_{k=1}^{n}a^n}\), iloczyn jako 
+\(\prod_{k=1}^{n} a^n \) albo \(\prod\limits_{k=1}^{n} a^n \).
+\subsection{Funkcje Eulera}
+\begin{equation} \Gamma(z)= \int\limits_{0}^{+\infty}t^{z-1}e^{-t}dt
+\end{equation}
+Drugim sposobem określenia funkcji $\Gamma$ (dla dowolnych liczb zespolonych jest:
+\begin{equation} \Gamma(z)= \lim_{{n \to +\infty}} \frac{n!n^z}{z(z+1)(z+2)...(z+n)}=\frac{1}{z}\prod\limits_{n=1}^{\infty}
+\frac{\left(1+\frac{1}{n}\right)^z}{1+\frac{z}{n}}.
+\end{equation}
+Możemy także określić odwrotność funkcji Gamma następująco($\gamma$ to stała Eulera-Mascheroniego):
+\begin{equation} \frac{1}{\Gamma(z)}=ze^{\gamma z} \prod\limits_{n=1}^{\infty}\left[\left(1+
+\frac{z}{n}\right)e^{-\frac{z}{n}}\right]. 
+\end{equation}
+Wzór (1) jest definicją \textbf{Funkcji Eulera.}
+
+\end{document}
