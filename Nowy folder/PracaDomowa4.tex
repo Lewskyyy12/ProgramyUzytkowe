@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{algorithm}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{algpseudocode}
+\begin{document}
+\begin{algorithm}
+\caption{Moj Alghorythm}\label{alg:cap}
+\begin{algorithmic}
+\Require $n \geq 0$
+\Ensure $a= x^n$
+\State $k \gets n$ ;$a \gets 1$; $b \gets x$
+\While{$k > 0$}    \quad        [Niezmennik:$ x^n = a \cdot b^k]$
+\If{$k$ jest liczbą parzystą}
+    \State $k \gets k/2$
+    \State $b \gets b \cdot b$  
+\Else{[$k$ jest liczbą nieparzystą]}
+    \State $k \gets k-  1$
+    \State $a \gets a \cdot b$
+\EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+w algoorytmu 1
+\end{document}
